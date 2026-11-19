@@ -1,0 +1,17 @@
+{
+  "name": "playwright-flake-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "playwright test --project=isolated",
+    "demo:solo": "playwright test --project=solo",
+    "demo:flake": "playwright test --project=shared"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.0"
+  }
+}
